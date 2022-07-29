@@ -11818,11 +11818,11 @@ body {
   align-self: center;
 }
 
-.form__width {
+.form__width, .form__right {
   color: whitesmoke;
 }
 
-::placeholder {
+.form__p label {
   color: whitesmoke;
 }
 
