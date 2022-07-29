@@ -1,0 +1,14 @@
+@import '../assets/node_modules/bootstrap/scss/bootstrap.scss';
+@import './base/_reset';
+@import './layout/body';
+@import './base/colors';
+@import './base/typo';
+@import './utilities/_mixins';
+@import './layout/_header';
+@import './layout/_footer';
+@import './views/_index';
+@import './views/portfolio';
+@import './views/film';
+@import './views/about';
+@import './views/contact';
+

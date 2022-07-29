@@ -1,0 +1,23 @@
+{
+  "name": "nicolas__mellino--mf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patob10/Nicolas__Mellino--MF.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patob10/Nicolas__Mellino--MF/issues"
+  },
+  "homepage": "https://github.com/patob10/Nicolas__Mellino--MF#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}

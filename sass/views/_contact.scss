@@ -1,0 +1,173 @@
+@import '../base/colors';
+@import '../base/typo';
+@import '../utilities/mixins';
+
+.info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.5em;
+
+    &__div{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        width: 100%;
+    }
+
+    &__h2, &__p{
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        width: 100%;
+    }
+
+    &__h2{
+        font-style: $title-font;
+        color: $hover-color;
+        font-size: 1.5rem;
+    }
+
+    &__p{
+        font-size: 1rem;
+        font-style: $primary-font;
+        color: $p-color;
+        }
+    &__h2--right,
+    &__p--right{
+        justify-content: right;
+        text-align: right;
+    }
+
+}
+
+@include tablet__m{
+.info{
+    @include gridlayout(2, 1fr, 2, 1fr, 1em);
+    row-gap: 1em;
+    margin-top: 2em;
+
+    &__div:nth-child(1){
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    }
+
+    &__div:nth-child(2){
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    }
+
+    &__div:nth-child(3){
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    }
+    
+    &__div:nth-child(4){
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    }
+
+    &__h2, &__p{
+        justify-content: center;
+        }
+    }
+    
+}
+
+//Formulario
+
+.formulario__wrapper {
+    margin-top: 1.5em;
+    box-shadow: 0 0 30px 0 rgba(15, 11, 11, 0.626);
+
+    & > * {
+        padding: 1em;
+    }
+}
+
+.formulario__form {
+    background: $form-background-color;
+
+    & form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        & label {
+            display: block;
+        }
+
+        & p {
+            margin: 0;
+            padding: 1em;
+        }
+
+        & .form__width {
+            grid-column: 1 / 3;
+        }
+        
+        & .form__left {
+            grid-column: 1 / 2;
+        }
+        
+        & .form__right {
+            grid-column: 2 / 3;
+        }
+
+        & button,
+        & input,
+        & textarea {
+            width: 100%;
+            padding: .7em;
+            border: none;
+            background: none;
+            outline: 0;
+            color: whitesmoke;
+            border-bottom: 1px solid whitesmoke;
+        }
+
+        & button {
+            background: $primary-color;
+            border-radius: 1em;
+            border: 0;
+            padding: 1em;
+        }
+        
+        & button:hover{
+            color: whitesmoke;
+            background-color: rgba(0, 0, 255, 0.253);
+        }
+    }
+}
+
+.form__right{
+    text-align: center;
+    align-self: center;
+}
+
+.form__width{
+    color: whitesmoke;
+}
+
+::placeholder {
+    color: whitesmoke;
+}
+
+@include tablet__m {
+    .formulario__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+
+        & > * {
+            padding: 2em;
+        }
+    }
+    .formulario__form form {
+        width: 100%;
+    }
+
+}
+

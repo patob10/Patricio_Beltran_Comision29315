@@ -1,0 +1,92 @@
+//BREAKPOINTS
+
+    //CEL:
+        //Pequeño: 0 - 320px
+        //grande: 320px. 480px
+    //TABLET
+        //Pequeño: 480px - 768px
+        //Grande: 768px - 960px
+    //Laptop: 960px - 1024px
+    //Escritorio: 1024px - 1328px
+
+///////////////////////////////////////////////////////////////////////
+
+// Mixin @media
+     @mixin cel__s{
+        @media screen and (min-width: 480px){
+            @content;    
+        }
+    }
+    @mixin tablet__s{
+        @media screen and (min-width: 600px)  {
+            @content;    
+        }
+    }
+
+    @mixin tablet__m{
+        @media screen and (min-width: 700px)  {
+            @content;    
+        }
+    }
+
+    @mixin tablet{
+        @media screen and (min-width: 760px)  {
+            @content;    
+        }
+    }
+
+    @mixin tablet__b{
+        @media screen and (min-width: 850px)  {
+            @content;    
+        }
+    }
+
+    @mixin laptop__s{
+        @media screen and (min-width: 1024px) {
+            @content;    
+        }
+    }
+
+    @mixin laptop__b{
+        @media screen and (min-width: 1200px) {
+            @content;    
+        }
+    }
+
+    @mixin desktop{
+        @media screen and (min-width: 1300px) {
+            @content;    
+        }
+    }
+
+    @mixin desktop__b{
+        @media screen and (min-width: 1400px) {
+            @content;    
+        }
+    }
+
+///////////////////////////////////////////////////////////////////////
+
+//mixin flex
+
+    @mixin flexbox( $direction , $corte , $just , $align ){
+        display         : flex;
+        flex-flow       : $direction $corte;
+        justify-content : $just;
+        align-items     : $align;
+        @content;
+    }
+
+////////////////////////////////////////////////////////////////////////
+
+//mixin Grid
+
+@mixin gridlayout( $columnas ,$medidaC, $row, $medidaR, $espacio : 0){
+        display                 : grid;
+        grid-template-columns   : repeat( $columnas , $medidaC );
+        grid-template-rows      : repeat( $row , $medidaR );
+        gap                     : $espacio;
+        @content;
+}
+
+
