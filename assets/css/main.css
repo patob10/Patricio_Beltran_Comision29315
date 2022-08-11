@@ -11584,45 +11584,14 @@ body {
   margin-top: 1em;
 }
 
-.film {
-  display: none;
-}
-.film__video {
-  width: 100%;
-  height: 20em;
-}
-
 @media screen and (min-width: 1024px) {
   .section--carousel, .carousel {
-    display: none;
+    height: 40rem;
   }
-  .film {
-    margin-right: 0px;
-    margin-top: 2%;
-    display: grid;
-    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
-    width: 100%;
-    height: 45em;
-    gap: 1em;
-  }
-  .film__div--1 {
-    grid-column: x0/x3;
-    grid-row: 1/1;
-  }
-  .film__div--2 {
-    grid-column: x0/x1;
-    grid-row: 2/2;
-  }
-  .film__div--3 {
-    grid-column: x1/x2;
-    grid-row: 2/2;
-  }
-  .film__div--4 {
-    grid-column: x2/x3;
-    grid-row: 2/2;
+  .div__carousel {
+    height: 40rem;
   }
   .film__video {
-    width: 100%;
     height: 100%;
   }
 }
