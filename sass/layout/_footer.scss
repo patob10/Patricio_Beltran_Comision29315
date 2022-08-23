@@ -3,8 +3,12 @@
 @import '../base/colors';
 @import '../base/typo';
 
-.fa-instagram , .fa-facebook, .fa-twitter, .fa-tiktok, .fa-snapchat{
+.fa-instagram , .fa-facebook, .fa-twitter, .fa-tiktok{
     padding-inline: 0.5em;
+}
+
+.fa-snapchat{
+    @extend .fa-facebook
 }
 
 .fa-instagram{
@@ -29,10 +33,10 @@
 }
 
 .fa-twitter{
-    color:#0099CC;
+    color: map-get($map: $colors__footer, $key:color_twitter );
 }
 .fa-snapchat{
-    color: black;
+    color: map-get($map: $colors__footer, $key: color_snap );
 }
 .fa-circle-up{
     display: none;

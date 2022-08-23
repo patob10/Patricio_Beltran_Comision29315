@@ -11109,7 +11109,7 @@ body {
     width: 20%;
   }
 }
-.fa-instagram, .fa-facebook, .fa-twitter, .fa-tiktok, .fa-snapchat {
+.fa-instagram, .fa-facebook, .fa-snapchat, .fa-twitter, .fa-tiktok {
   padding-inline: 0.5em;
 }
 
@@ -11121,7 +11121,7 @@ body {
   -webkit-background-clip: text;
 }
 
-.fa-facebook {
+.fa-facebook, .fa-snapchat {
   color: #3b5998;
   background-image: linear-gradient(to bottom, transparent 20%, white 20%, white 93%, transparent 93%);
   background-size: 55%;
