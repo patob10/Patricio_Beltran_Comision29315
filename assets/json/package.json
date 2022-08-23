@@ -1,22 +1,22 @@
 {
-  "name": "nicolas__mellino--mf",
+  "name": "patricio_beltran_comision29315",
   "version": "1.0.0",
-  "description": "",
+  "description": "Aplicando sass",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patob10/Nicolas__Mellino--MF.git"
+    "url": "git+https://github.com/patob10/Patricio_Beltran_Comision29315.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/patob10/Nicolas__Mellino--MF/issues"
+    "url": "https://github.com/patob10/Patricio_Beltran_Comision29315.git/issues"
   },
-  "homepage": "https://github.com/patob10/Nicolas__Mellino--MF#readme",
+  "homepage": "https://github.com/patob10/Patricio_Beltran_Comision29315.git#readme",
   "dependencies": {
     "bootstrap": "^5.2.0"
   }
