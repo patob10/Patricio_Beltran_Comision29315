@@ -350,11 +350,11 @@ body {
     width: 20%;
   }
 }
-.fa-instagram, .fa-facebook, .fa-snapchat, .fa-twitter, .fa-tiktok {
+.fa-instagram, .fa-snapchat, .fa-facebook, .fa-twitter, .fa-tiktok {
   padding-inline: 0.5em;
 }
 
-.fa-instagram {
+.fa-instagram, .fa-snapchat {
   color: transparent;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -362,7 +362,7 @@ body {
   -webkit-background-clip: text;
 }
 
-.fa-facebook, .fa-snapchat {
+.fa-facebook {
   color: #3b5998;
   background-image: linear-gradient(to bottom, transparent 20%, white 20%, white 93%, transparent 93%);
   background-size: 55%;

@@ -3,12 +3,12 @@
 @import '../base/colors';
 @import '../base/typo';
 
-.fa-instagram , .fa-facebook, .fa-twitter, .fa-tiktok{
+.fa-instagram , .fa-facebook, .fa-twitter, .fa-tiktok {
     padding-inline: 0.5em;
 }
 
 .fa-snapchat{
-    @extend .fa-facebook
+    @extend .fa-instagram;
 }
 
 .fa-instagram{
